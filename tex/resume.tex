@@ -1,0 +1,292 @@
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[9pt,letterpaper,ragged2e,withhyper]{../asset/altacv}
+%% AltaCV uses the fontawesome5 and packages.
+%% See http://texdoc.net/pkg/fontawesome5 for full list of symbols.
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=1cm,top=0.6cm,bottom=0.7cm,columnsep=0.8cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+\usepackage{hyphenat}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\iftutex
+  % If using xelatex or lualatex:
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  % If using pdflatex:
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  % \usepackage{sourcesanspro}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+% Change the colours if you want to
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\Large\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+\newcommand{\compactdivider}{%
+  \par\noindent\textcolor{body!30}{\hdashrule{\linewidth}{0.4pt}{0.5ex}}\par
+}
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want to use an author-year reference style like APA(6)
+%% for your publication list
+% \input{pubs-authoryear}
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want an originally numerical reference style like IEEE
+%% for your publication list
+% \input{pubs-num}
+
+%% main.bib contains your publications
+% \addbibresource{main.bib}
+
+\hyphenpenalty=1000
+\exhyphenpenalty=1000
+
+\begin{document}
+\name{Sam (Shengkai) Xu}
+\tagline{Ph.D. Researcher | Machine Learning, Computer Vision \& Engineering Systems}
+%% You can add multiple photos on the left or right
+\photoR{2cm}{../asset/shengkai}
+% \photoL{2.5cm}{Yacht_High,Suitcase_High}
+
+\personalinfo{%
+  % Not all of these are required!
+  \email{shengkai.x.sam@gmail.com}
+  \email{sxu7@uncc.edu}
+  \phone{734-731-6398}
+  \location{Charlotte, NC}
+  \linkedin{shengkai-xu-sam}
+  \github{samxu29}
+  %% You can add your own arbitrary detail with
+  %% \printinfo{symbol}{detail}[optional hyperlink prefix]
+  % \printinfo{\faPaw}{Hey ho!}[https://example.com/]
+  %% Or you can declare your own field with
+  %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
+  % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
+  % \gitlab{your_id}
+  %%
+  %% For services and platforms like Mastodon where there isn't a
+  %% straightforward relation between the user ID/nickname and the hyperlink,
+  %% you can use \printinfo directly e.g.
+  % \printinfo{\faMastodon}{@username@instace}[https://instance.url/@username]
+  %% But if you absolutely want to create new dedicated info fields for
+  %% such platforms, then use \NewInfoField* with a star:
+  % \NewInfoField*{mastodon}{\faMastodon}
+  %% then you can use \mastodon, with TWO arguments where the 2nd argument is
+  %% the full hyperlink.
+  % \mastodon{@username@instance}{https://instance.url/@username}
+}
+
+\makecvheader
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.66}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{Research Assistant}{UNC Charlotte, Dr.\ Hongfei Xue}{2024 -- Present}{}
+\begin{itemize}
+\item Architect, train, and evaluate deep-learning and computer-vision models for multimodal sensing with mmWave radar, RGB/depth cameras, LiDAR, and acoustic sensors.
+\item Build ground-truth and sensor-data pipelines for pose and mesh reconstruction; analyze accuracy, latency, and cross-modal consistency and communicate results to cross-disciplinary collaborators.
+\end{itemize}
+
+\divider
+
+\cvevent{AI Research Assistant}{UNC Charlotte TeCSAR Lab}{2022 -- 2023}{}
+\begin{itemize}
+\item Developed a video-processing and anomaly-action-detection pipeline for civilian security and public-safety applications.
+\item Increased processing throughput by 50\%, improving video smoothness and system response time.
+\end{itemize}
+
+\divider
+
+\cvevent{Embedded Firmware Engineer}{Oxit LLC}{2021 -- 2023}{}
+\begin{itemize}
+\item Developed modular Embedded C libraries across chipsets and built low-power RF and IoT systems.
+\item Designed AWS and Google Cloud automation pipelines and tools that improved development efficiency and compatibility.
+\end{itemize}
+
+\cvsection{Selected Projects}
+
+\textbf{Neural Musculoskeletal Pose Estimation}\\
+\textit{Human Mesh Reconstruction, Inverse Kinematics | 2026--Present}\\
+\begin{itemize}
+\item Real-time mesh and pose pipeline being translated toward deployment with collaborators in sports medicine.
+\end{itemize}
+
+\compactdivider
+\textbf{SocialBit On-Device Classifier}\\
+\textit{Wearable ML, Audio Classification | 2026--Present}\\
+\begin{itemize}
+\item Privacy-focused smartwatch models for interaction type, conversational depth, and tone under edge-compute constraints.
+\end{itemize}
+
+\cvsection{Selected Publications}
+
+\textbf{Real-Time Neural Musculoskeletal Pose Estimation}\\
+\textit{IEEE/ACM CHASE 2026}
+\begin{itemize}
+\item Replaced iterative inverse kinematics with a neural surrogate in a real-time monocular reconstruction pipeline.
+\end{itemize}
+
+\divider
+
+\textbf{Towards Robust mmWave-Based Human Activity Recognition Using Large Simulated Datasets for Model Pretraining}\\
+\textit{IEEE BigData 2024}
+\begin{itemize}
+\item Used simulated human-mesh data and heatmap perturbations to improve pretraining with limited real-world data.
+\end{itemize}
+
+\divider
+
+\textbf{Real-Time Object Detection Algorithm Performance on Edge Computing Devices}\\
+\textit{IEEE ISNCC 2024}
+\begin{itemize}
+\item Benchmarked YOLOv5 latency and power on Jetson Nano, Raspberry Pi 4, and Coral TPU.
+\end{itemize}
+
+\switchcolumn
+\fontsize{10pt}{12pt}\selectfont
+
+\cvsection{Profile}
+
+\begin{quote}
+Ph.D. researcher developing deep-learning models and experimental pipelines for physical sensing, edge deployment, and engineering prediction. Embedded-systems and CAD experience; Formula SAE contributor motivated to apply AI and scientific computing to motorsports.
+\end{quote}
+
+\vfill
+\cvsection{Education}
+
+\cvevent{Ph.D.\ Computer Science}{UNC Charlotte}{Expected 2029}{}
+\small Research focus: deep-learning systems for multimodal sensing.
+
+\divider
+
+\cvevent{M.Sc.\ Computer Engineering}{University of North Carolina \\ at Charlotte}{Aug 2022 -- Aug 2024}{}
+\small Research focus: machine learning on edge and embedded systems.
+
+\divider
+
+\cvevent{B.Sc.\ Computer Engineering}{University of North Carolina \\ at Charlotte}{Jan 2018 -- Dec 2022}{}
+\small Machine Learning concentration; Mathematics minor
+
+\vfill
+\cvsection{Technical Skills}
+
+\textbf{Programming \& ML}\\
+Python, C++, Embedded C, SQL, PyTorch, TensorFlow, OpenCV, scikit-learn
+
+\compactdivider
+\textbf{Engineering \& Systems}\\
+SOLIDWORKS, KiCad, sensor integration, experimental data acquisition, embedded systems, Linux, Git/GitHub, AWS, Google Cloud
+
+\vfill
+\cvsection{Motorsports Involvement}
+
+\textbf{Formula SAE Electrical Team | 2018--2019}\\
+Contributed to electrical power distribution and vehicle wiring for UNC Charlotte Formula SAE.
+
+\compactdivider
+\textbf{Club-Level Automobile Time Attack | 2020--2024}\\
+Participated in time-attack events and prepared personal track cars through mechanical maintenance, repairs, inspections, and track-day setup.
+
+\compactdivider
+\textbf{Motorcycle Track Days | 2024--Present}\\
+Participate in track days and prepare personal motorcycles through routine service, mechanical repairs, and pre-event safety inspections.
+
+\end{paracol}
+
+% \newpage
+
+
+% % \cvsection{Solutions Intelligence Developer} % Cover-Letter
+% \makecvheader
+
+
+% \bigskip
+% \divider
+
+% \begin{figure}[h]
+%   \centering
+%   \begin{minipage}{0.3\textwidth}
+%   \centering
+%   \includegraphics[width=\linewidth]{qr_IEEE.png}
+%   \end{minipage}\hfill
+%   \begin{minipage}{0.3\textwidth}
+%   \centering
+%   \includegraphics[width=\linewidth]{qr_github.png}
+%   \end{minipage}\hfill
+%   \begin{minipage}{0.3\textwidth}
+%   \centering
+%   \includegraphics[width=\linewidth]{qr_linkedin.png}
+%   \end{minipage}
+%   \end{figure}
+
+% \today
+
+% \bigskip
+
+% Dear Hiring Manager,
+
+% \bigskip
+% I am writing to express my strong interest in the Software Engineering Summer Scholar position at Deloitte Consulting. I am currently pursuing my Master's degree in Computer Engineering at the University of North Carolina at Charlotte, with an expected graduation date of May 2024. As evidenced by my attached resume, I believe I possess the skills, experience, and motivation to thrive in this role.
+
+% \bigskip
+% As a firmware engineer intern at Oxit LLC, I gained hands-on experience developing embedded systems and IoT applications using technologies like LoRa and low-power RF communication. In this role, I designed module libraries to streamline embedded development across different chipsets. I also served as an AI research assistant at the UNC Charlotte TeCSAR lab, where I worked on an anomaly detection pipeline for public safety video analytics. These experiences allowed me to hone my software development and machine learning skills.
+
+% \bigskip
+% In addition to my work experience, I have undertaken several programming projects on my own initiative. For instance, I developed a Telegram-based automated 3D printing server for remote printing. I also created a real-time mask detection system using YOLO object detection models. Through projects like these, I have become proficient in languages like Python, C++, and PyTorch/TensorFlow machine learning frameworks.
+
+% \bigskip
+% I believe that my academic coursework has also prepared me well for this Software Engineering role. I have taken classes covering software engineering principles, data structures and algorithms, operating systems, and computer architecture. I am confident in my ability to apply this knowledge to develop robust and scalable cloud-native applications using agile methodologies.
+
+% \bigskip
+% I have also applied for your Business Technology Solutions Summer Scholar roles. I believe that my passion for learning new technologies paired with my engineering background enables me to thrive in a consulting environment, understand business needs, and deliver technological solutions. I am excited by the opportunity to gain well-rounded experience through a rotational program like Deloitte's.
+
+% \bigskip
+% In summary, I am eager to leverage my technical skills and continual drive to learn to deliver impactful solutions on diverse client engagements. I would welcome the opportunity to discuss how I can contribute to Deloitte Consulting as a Software Engineering or Business Technology Solutions Summer Scholar. Thank you for your consideration, and I look forward to hearing from you.
+
+% \bigskip
+% Sincerely, \\
+% Shenkai Xu
+
+\end{document}

@@ -1,0 +1,300 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper,bottom = 0.6in,left = 0.75in,right = 0.75in,top = 1cm]{geometry}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{wrapfig}
+\usepackage{microtype}
+\usepackage{titlesec}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage{palatino}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pageanchor=false}
+\usepackage{textcomp}
+
+\usepackage{verbatim}
+\usepackage{makecell}
+\usepackage{pbox}
+
+%for color
+\usepackage[usenames, dvipsnames]{color}
+\definecolor{myblue}{RGB}{10,0,254}
+
+\newcommand{\xfilll}[2][1ex]{
+\dimen0=#2\advance\dimen0 by #1
+\leaders\hrule height \dimen0 depth -#1\hfill}
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}
+\titlespacing*{\section}{0pt}{0.9em}{0.4em}
+\newcommand{\cvsection}[1]{\section*{{\LARGE\color{myblue}#1}\xfilll[0pt]{0.5pt}}}
+\newcommand{\projectheading}[3]{%
+  \noindent\begin{tabularx}{\textwidth}{@{}X>{\raggedleft\arraybackslash}p{7em}@{}}
+    \textbf{\large #1}\,|\,\normalfont #2 & \emph{#3}
+  \end{tabularx}\par\nopagebreak
+}
+\renewcommand\labelitemi{\raisebox{0.4ex}{\tiny$\bullet$}}
+\renewcommand{\labelitemii}{$\cdot$}
+\setlist[itemize]{
+  leftmargin=2em,
+  itemsep=0.08em,
+  topsep=0.15em,
+  parsep=0pt,
+  partopsep=0pt,
+  after=\vspace{1.0em}
+}
+\pagenumbering{gobble}
+
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\raggedbottom\relax
+\emergencystretch=1em
+
+\setlength{\tabcolsep}{0in}
+\renewcommand{\labelitemii}{$\circ$}
+
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+    {\Huge \scshape Shengkai (Sam) Xu} \\ \vspace{1pt}
+    % SOFTWARE ENGINEER \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\enspace{}+1\char45{}734\char45{}371\char45{}6398\enspace{}
+    \href{mailto:shengkai.x.sam@gmail.com}{\raisebox{-0.2\height}\faEnvelope\enspace{}\underline{shengkai.x.sam@gmail.com}}\enspace{}
+    \href{https://linkedin.com/in/shengkai-xu-sam}{\raisebox{-0.2\height}\faLinkedin\enspace{}\underline{shengkai-xu-sam}}\enspace{}
+\end{center}
+
+% \bibliographystyle{IEEEtran}
+% \bibliography{publication}
+
+% %%% SHORT SUMMARY %%%
+% \section*{{ \LARGE \color{myblue} Summary}\xfilll[0pt]{0.5pt}}
+% \vspace{-15pt}
+% \vspace{1.5mm}
+% As an international student with a strong engineering background and a passion for innovative technologies, I strive to make a positive impact by driving change through my work.
+% \vspace{-8pt}
+
+%%%% EDUCATION %%%%
+\cvsection{Education}
+
+%\begin{itemize}[itemsep = -0.75 mm, leftmargin=2em]
+\textbf{\large Ph.D. in Computer Science}| \normalfont{University of North Carolina at Charlotte} \hfill { \small Jan 2024 \textendash{} Present}
+\begin{itemize}
+        \item[{\color[RGB]{10,0,254}$\bullet$}] Research multimodal sensing systems that integrate mmWave radar, LiDAR, and acoustic sensors
+        \item[{\color[RGB]{10,0,254}$\bullet$}] Apply deep learning and machine learning to multimodal sensor data for human pose estimation and human mesh reconstruction
+        \end{itemize}
+\textbf{\large M.Sc. Computer Engineering}| \normalfont{University of North Carolina at Charlotte} \hfill { \small Aug 2022 \textendash{} Aug 2024}
+\begin{itemize}
+        \item[{\color[RGB]{10,0,254}$\bullet$}] \noindent Research in Deep Learning and Computer Vision on Edge Devices/Servers
+        \end{itemize}
+\textbf{\large B.Sc. Computer Engineering}| \normalfont{University of North Carolina at Charlotte} \hfill { \small Jan 2018 \textendash{} Dec 2022}
+\begin{itemize}
+        \item[{\color[RGB]{10,0,254}$\bullet$}] \noindent Dean's List
+        \item[{\color[RGB]{10,0,254}$\bullet$}] \noindent Concentration in Machine Learning
+        \item[{\color[RGB]{10,0,254}$\bullet$}] \noindent Minor in Mathematics
+        \end{itemize}
+
+%%% SKILLS %%%
+\cvsection{Skills}
+\begin{tabularx}{\textwidth}{@{}>{\bfseries}l@{\hspace{1.5em}}X@{}}
+Programming & Python, SQL, Embedded C, C++, VHDL \\
+ML/AI & PyTorch, TensorFlow, Keras, pandas, scikit-learn \\
+Embedded Systems & ESP32, STM32, Arduino, Raspberry Pi \\
+CAD & SOLIDWORKS, EAGLE, KiCad \\
+Cloud Services & AWS, Google Cloud, OpenAI, RunPod \\
+Miscellaneous & Git, GitHub, Linux, Vivado, \LaTeX
+\end{tabularx}
+
+%%%% PROFESSIONAL EXPERIENCE %%%%
+\cvsection{Experience}
+
+\textbf{\large Research Assistant}| \normalfont{Dr.\ Hongfei Xue} \hfill { \small Jan 2024 \textendash{} Present}
+\begin{itemize}
+        \item[{\color[RGB]{10,0,254}$\bullet$}] \noindent Under Creating and implementing a ground truth model that utilizes a system of RGB and Depth Cameras in a remote setting. This model will enable a radio mmWave device to accurately estimate human poses.
+        \item[] \textit{Dr.\ Hongfei Xue is an Assistant Professor in the Department of Computer Science at the University of North Carolina at Charlotte. His research interests lie at the intersection of Internet of Things (IoT) and Artificial Intelligence (AI), with a focus on developing intelligent wireless sensing systems.}
+        \end{itemize}
+
+% \begin{itemize}[itemsep = -0.75 mm, leftmargin=2em]
+\noindent\textbf{\large Research Assistant}| \normalfont{TeCSAR} \hfill { \small Aug 2022 \textendash{} Jan 2023}
+\begin{itemize}
+        \item[{\color[RGB]{10,0,254}$\bullet$}] \noindent Developing and implementing an AI pipeline for civilian security and public safety systems, especially in the realm of video processing and anomaly action detection, involves a complex set of skills and experiences.
+        \item[{\color[RGB]{10,0,254}$\bullet$}] \noindent Achieved a 50\% increase in processing speed, leading to significantly enhanced video output smoothness and faster response times.
+        \item[] \textit{TeCSAR (Transformative Computer Systems and Architecture Research Lab) is a UNC Charlotte research lab led by Dr.\ Hamed Tabkhi. The lab uses machine learning, deep learning, and data analytics to improve community safety, health, and well-being.}
+        \end{itemize}
+
+\noindent \textbf{\large Embedded Firmware Engineer}| \normalfont{Oxit} \hfill { \small May 2021 \textendash{} May 2023}
+\\
+\emph{Awarded Letter of Recommendation for excellent performance}
+\begin{itemize}
+        \item[{\color[RGB]{10,0,254}$\bullet$}] \noindent Led research and development initiatives, effectively creating innovative tools that substantially enhanced project efficiency.
+        \item[{\color[RGB]{10,0,254}$\bullet$}] \noindent Developed and deployed Internet of Things (IoT) service and device automation pipelines in AWS and Google Cloud platforms.
+        \item[{\color[RGB]{10,0,254}$\bullet$}] \noindent Designed modular libraries to streamline embedded applications across various chipsets, significantly enhancing system efficiency and compatibility.
+        \item[] \textit{Oxit is an engineering company specializing in low-power, long-range RF communication technology for IoT applications, including LoRa.}
+        \end{itemize}
+
+%%% PUBLICATIONS %%%
+\cvsection{Publications}
+
+\noindent
+\textbf{S. Xu}, F. Koleini, M. U. Saleem, A. Thomas, A. Helmy, P. Wang, and H. Xue,
+\textbf{Demo: Real-Time Neural Musculoskeletal Pose Estimation},
+in \textit{2026 IEEE/ACM Conference on Connected Health: Applications, Systems and Engineering Technologies (CHASE)},
+2026. (Accepted)
+\begin{itemize}
+\item[{\color[RGB]{10,0,254}$\bullet$}] Presents a modular, two-stage system for real-time musculoskeletal reconstruction from monocular video, bypassing computationally expensive Inverse Kinematics (IK) solvers.
+\item[{\color[RGB]{10,0,254}$\bullet$}] Integrates FastHMR for rapid 3D mesh recovery and a Neural Inverse Kinematics (NeurIK) module to achieve a real-time throughput on consumer-grade GPUs.
+\end{itemize}
+
+\noindent
+H. Xie, \textbf{S. Xu}, C. Guo, M. U. Saleem, W. Wu, C. Chen, A. Helmy, P. Wang, and H. Xue,
+\textbf{Monocular Models are Strong Learners for Multi-View Human Mesh Recovery},
+\textit{Under Review: European Conference on Computer Vision (ECCV)}, 2026.
+\begin{itemize}
+\item[{\color[RGB]{10,0,254}$\bullet$}] Proposes a training-free framework that leverages pretrained single-view HMR models as strong priors to enable calibration-free 3D reconstruction across arbitrary camera setups.
+\item[{\color[RGB]{10,0,254}$\bullet$}] Employs test-time adaptation guided by multi-view consistency and 2D anatomical landmarks to achieve state-of-the-art performance on benchmark datasets without requiring multi-view training data.
+\end{itemize}
+
+\noindent
+C. Guo, Q. Cao, \textbf{S. Xu}, H. Xie, K. Su, P. Wang, and H. Xue,
+\textbf{mmSimPrior: Learning Simulation Priors for Data-Efficient Real-World mmWave Human Motion Reconstruction},
+\textit{Under Review: Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)}, 2026.
+\begin{itemize}
+\item[{\color[RGB]{10,0,254}$\bullet$}] Introduces a framework that learns transferable knowledge priors (signal, motion, and mapping) from large-scale simulation data to address data scarcity in mmWave human motion reconstruction.
+\item[{\color[RGB]{10,0,254}$\bullet$}] Utilizes physics-informed domain randomization in the radar heatmap space to reduce the sim-to-real gap, supporting both zero-shot transfer and data-efficient finetuning.
+\end{itemize}
+
+\noindent
+    V. Joshi, \textbf{S. Xu}, Q. Cao, Y. Zhu, P. Wang and H. Xue,
+    \textbf{Towards Robust mmWave-based Human Activity Recognition using Large Simulated Dataset for Model Pretraining},
+    in \textit{2024 IEEE International Conference on Big Data (BigData), Washington, DC, USA, 2024},
+    pp.\ 7332\textendash{}7337, doi: 10.1109/BigData62323.2024.10825019.
+\begin{itemize}
+    \item[{\color[RGB]{10,0,254}$\bullet$}] To address data scarcity in mmWave-based Human Activity Recognition (HAR), the study proposes mmAP, a framework that synthesizes a large-scale mmWave dataset using human mesh data.
+    \item[{\color[RGB]{10,0,254}$\bullet$}] The approach utilizes a multi-modal masked autoencoder for pretraining and applies heatmap-specific perturbations to enhance robustness, demonstrating significant improvements over baselines after fine-tuning on limited real-world data.
+\end{itemize}
+
+\noindent
+    \textbf{S. Xu} and S. Shue,
+    \textbf{Real-Time Object Detection Algorithm Performance on Edge Computing Devices},
+    in \textit{2024 International Symposium on Networks, Computers and Communications (ISNCC), Washington DC, DC, USA, 2024},
+    pp.\ 1\textendash{}5, doi: 10.1109/ISNCC62547.2024.10759057.
+\begin{itemize}
+    \item[{\color[RGB]{10,0,254}$\bullet$}] This study investigates the use of edge computing for driver assistance by deploying the YOLOv5 algorithm for real-time traffic light detection across three architectures: Jetson Nano, Raspberry Pi 4, and Coral TPU Dev Board.
+    \item[{\color[RGB]{10,0,254}$\bullet$}] By evaluating inference time and power consumption, the results demonstrate the feasibility of using these edge devices to build compact, power-efficient intelligent transportation systems.
+\end{itemize}
+
+\noindent
+    \textbf{S. Xu}, M. N. Hasan, R. E. Thomas, A. Lopez, and S. Shue, \textbf{Charlotte Area Traffic Light Dataset},
+    in \textit{2023 IEEE 20th International Conference on Smart Communities: Improving Quality of Life using AI, Robotics and IoT (HONET), Boca Raton, FL, USA, 2023},
+    pp.\ 1\textendash{}4, doi: 10.1109/HONET59747.2023.10374673.
+\begin{itemize}
+    \item[{\color[RGB]{10,0,254}$\bullet$}] A new dataset with over 4,000 dashcam images from Charlotte, NC, includes diverse weather and lighting conditions to benchmark traffic light detection models.
+    \item[{\color[RGB]{10,0,254}$\bullet$}] The dataset reveals performance variations in models like YOLOv5 under different conditions, emphasizing region-specific factors in traffic light perception.
+\end{itemize}
+
+\noindent
+    A. Brooks, B. Bryant, C. Spoerer, M. Lust, \textbf{S. Xu}, Y. Li, N. N. BouSaba, and D. Maity,
+    \textbf{Path Planning for Robotic Delivery Systems},
+    in \textit{SoutheastCon 2022},
+    pp.\ 421\textendash{}426, 2022.\ doi: \url{10.1109/SoutheastCon48659.2022.9764058}.
+\begin{itemize}
+    \item[{\color[RGB]{10,0,254}$\bullet$}] The study uses a modified Dijkstra's algorithm and a directed graph, based on GPS locations from Open Street Map, for efficient path planning across a university campus.
+    \item[{\color[RGB]{10,0,254}$\bullet$}] A node-abstraction method compresses the graph to reduce time complexity, significantly improving computation time in simulation results.
+\end{itemize}
+
+%%% PROJECTS %%%
+\cvsection{Projects}
+
+\projectheading{SocialBit}{Wearable Computing, On-Device Machine Learning, Audio Classification}{2026 \textendash{} Present}
+\begin{itemize}
+        \item[{\color[RGB]{10,0,254}$\bullet$}] Developing a privacy-preserving smartwatch system for people recovering from stroke that analyzes 30-second audio samples to assess daily social interactions
+        \item[{\color[RGB]{10,0,254}$\bullet$}] Designing lightweight audio- and transcription-based models to estimate conversation depth and tone and distinguish social interaction from television, podcasts, and music
+        \item[{\color[RGB]{10,0,254}$\bullet$}] Extending prior SocialBit research toward real-time, fully on-device classification while balancing model accuracy, battery life, and user privacy
+\end{itemize}
+
+\projectheading{Real-Time Neural Musculoskeletal Pose Estimation}{FastHMR, NeurIK, Computer Vision}{2026}
+\noindent\raisebox{-0.2\height}\faFileInvoice\ \textit{Demo paper accepted at IEEE/ACM CHASE 2026}
+\begin{itemize}
+        \item[{\color[RGB]{10,0,254}$\bullet$}] Developing a modular, real-time pipeline that combines monocular human mesh recovery with neural inverse kinematics to estimate musculoskeletal pose without computationally expensive optimization
+        \item[{\color[RGB]{10,0,254}$\bullet$}] Translating the published prototype into an end-user system through active discussions with sports medicine collaborators on deployment and evaluation
+        \item[{\color[RGB]{10,0,254}$\bullet$}] Published with S. Xu, F. Koleini, M. U. Saleem, A. Thomas, A. Helmy, P. Wang, and H. Xue, \textit{Demo: Real-Time Neural Musculoskeletal Pose Estimation}, IEEE/ACM CHASE, 2026 (accepted)
+\end{itemize}
+
+\projectheading{AI-Powered Discord ChatBot}{PyTorch, Huggingface.co, LangChain, PrivateGPT}{2023}
+\noindent\href{https://github.com/samxu29/LLM-Discord-Bot}{\raisebox{-0.2\height}\faGithub\ \underline{LLM-Discord-Bot}}
+\begin{itemize}
+        \item[{\color[RGB]{10,0,254}$\bullet$}] \noindent Engineered an innovative Discord assistant bot by integrating LangChain and Hugging Face's large language models, facilitating complex and dynamic user interactions.
+        \item[{\color[RGB]{10,0,254}$\bullet$}] \noindent Ensured the bot operates locally, prioritizing privacy and data security for users within Discord communities.
+        \item[{\color[RGB]{10,0,254}$\bullet$}] \noindent Demonstrated expertise in AI and chatbot technology, leading to a notable enhancement in user engagement and experience on private Discord servers.
+	\end{itemize}
+\projectheading{Fungus Classifier on Edge Device}{TensorFlow, TensorFlow Lite, Android}{2023}
+\noindent\href{https://github.com/samxu29/Applied-AI-Fungus-Detector}{\raisebox{-0.2\height}\faGithub\ \underline{Applied-AI-Fungus-Detector}}
+\begin{itemize}
+        \item[{\color[RGB]{10,0,254}$\bullet$}] \noindent Spearheaded the design and development of a mobile application focused on fungus image classification, catering to foraging and wilderness survival needs.
+        \item[{\color[RGB]{10,0,254}$\bullet$}] \noindent Integrated an AI model that operates locally on mobile devices, ensuring the app's functionality in remote, off-grid locations.
+        \item[{\color[RGB]{10,0,254}$\bullet$}] \noindent Enhanced the app's reliability and accessibility for outdoor enthusiasts, providing a valuable tool for identification in environments without internet or cellular service.
+	\end{itemize}
+\projectheading{SR-GAN Implementation}{PyTorch, TensorFlow, Generative Adversarial Networks}{2023}
+\noindent\href{https://github.com/samxu29/Applied-AI-SRGAN}{\raisebox{-0.2\height}\faGithub\ \underline{Applied-AI-SRGAN}}
+\begin{itemize}
+        \item[{\color[RGB]{10,0,254}$\bullet$}] \noindent Developed a binary classification model utilizing an existing dataset, focusing on initial data analysis and model training.
+        \item[{\color[RGB]{10,0,254}$\bullet$}] Implemented a Super-Resolution Generative Adversarial Network (SRGAN) to upscale low-resolution data, enhancing its quality and detail.
+        \item[{\color[RGB]{10,0,254}$\bullet$}] Created a second binary classification model that utilized the high-resolution output from the SRGAN, integrating advanced AI techniques for improved accuracy.
+        \item[{\color[RGB]{10,0,254}$\bullet$}] Conducted a comprehensive comparative analysis between the two models, showcasing the effectiveness of SRGAN in boosting data resolution and classification performance.
+	\end{itemize}
+\projectheading{Pet Detector}{Keras, Embedded C, NVIDIA Jetson Nano, ESP32, TensorFlow Lite, OpenCV}{2022}
+\begin{itemize}
+        \item[{\color[RGB]{10,0,254}$\bullet$}] \noindent Implemented transfer learning with Edge Impulse's FOMO (Faster Objects, More Objects) model to develop a pet activity detection system for office pets. Successfully deployed the solution on edge devices, including Nvidia Jetson Nano and ESP32 embedded systems, demonstrating proficiency in IoT and AI technologies for real-time monitoring applications.
+	\end{itemize}
+\projectheading{Optical Inventory System}{OpenCV, Robotics, Electronics, Raspberry Pi}{2021}
+\begin{itemize}
+        \item[{\color[RGB]{10,0,254}$\bullet$}] \noindent Developed an innovative inventory management system for Oxit, designed to monitor vaccine stocks in a medical refrigerator. Utilized a Raspberry Pi to control a camera mounted on a stepper motor, enabling precise X and Y axis movements. This system captured detailed images of individual shelf sections, seamlessly stitched into a comprehensive image, providing the client with an efficient solution for real-time inventory tracking.
+	\end{itemize}
+\projectheading{Mask Detector}{PyTorch, Kaggle, YOLO, OpenCV}{2020}
+\begin{itemize}
+        \item[{\color[RGB]{10,0,254}$\bullet$}] \noindent Implemented YOLOv4/5 models to analyze mask usage in crowds from video footage, enabling statistical insights on mask-wearing in the surrounding area.
+	\end{itemize}
+\projectheading{High-Altitude Weather Balloon}{Electronics, Embedded Systems, Wireless Communication}{2020}
+\emph{Sponsored by Wake Tech Community College and North Carolina Space Grant}
+\begin{itemize}
+
+        \item[{\color[RGB]{10,0,254}$\bullet$}] \noindent Engineered and executed a high-altitude weather balloon project, reaching an altitude of approximately 30,000 meters.
+        \item[{\color[RGB]{10,0,254}$\bullet$}] \noindent Developed and integrated a specialized payload for advanced outer space air and pollen sampling. Successfully designed and implemented a retrieval system, ensuring the payload's safe and intact return to Earth post-data collection.
+	\end{itemize}
+
+% \newpage\vspace{1cm}
+%%% EXTRACURRICULAR %%%
+\cvsection{Extracurricular}
+
+\textbf{\large IEEE-Eta Kappa Nu} \hfill {2022}\\
+\emph{Honor Society Member}
+\begin{itemize}
+        \item[{\color[RGB]{10,0,254}$\bullet$}] \noindent IEEE-HKN, founded in 1904, is an honor society within IEEE that fosters excellence in education and the profession, emphasizing scholarship, character, attitude, professional accomplishment, service, and leadership in electrical and computer engineering, and related IEEE fields.
+	\end{itemize}
+% \newpage\vspace{1cm}
+\textbf{\large UNC Charlotte Engineering Leadership Academy}| \normalfont{Electronic, CAD, Hardware} \hfill {2020 \textendash{} 2021}\\
+\emph{UNC Charlotte Engineering Leadership Training}
+\begin{itemize}
+        \item[{\color[RGB]{10,0,254}$\bullet$}] \noindent The Leadership Academy is a two-year program that equips undergraduates with leadership skills through five modules taught by faculty and industry experts, including practical off-campus experiences, preparing for roles in the engineering industry.
+	\end{itemize}
+\textbf{\large Student Formula Society of Automotive Engineers}| \normalfont{Electronic, CAD, Hardware}  \hfill {2019}\\
+\emph{UNC Charlotte Student Club}
+\begin{itemize}
+        \item[{\color[RGB]{10,0,254}$\bullet$}] \noindent Contributed to the electrical power and wiring department of the Student Formula Racing club, assisting the team in their participation in the Formula SAE Student engineering competition.
+	\end{itemize}
+\textbf{\large UNC Charlotte Area Robotic Team}| \normalfont{3D-Printing, CAD, Electronic, Embedded System}  \hfill {2018}\\
+\emph{UNC Charlotte Student Club}
+\begin{itemize}
+        \item[{\color[RGB]{10,0,254}$\bullet$}] \noindent Designed and programmed an autonomous robotic vehicle for IEEE SoutheastCon 2018, focusing on navigating diverse courses and solving complex challenges. This project involved creating a simulation of extraterrestrial environments to demonstrate the robot's potential for planetary exploration applications.
+	\end{itemize}
+\textbf{\large Vice President of Engineering Club}| \normalfont{Leadership, Engineering Problem Solving}  \hfill {2017}\\
+\emph{Wake Tech Community College Student Club}
+\begin{itemize}
+        \item[{\color[RGB]{10,0,254}$\bullet$}] \noindent Assisted the President in overseeing club operations and ensuring that all activities aligned with the club's goals and objectives.
+        \item[{\color[RGB]{10,0,254}$\bullet$}] \noindent Coordinated and planned events, workshops, or competitions related to engineering, fostering a collaborative environment for members to share ideas and work on projects.
+	\end{itemize}
+
+\end{document}

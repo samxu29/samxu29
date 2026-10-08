@@ -7,12 +7,12 @@
 - 🧑‍💻 I study AI by day & work on hardware by night.
 
 
-## 📰 Publication
+<!--## 📰 Publication
 
 [![Path Planning for Robotic Delivery Systems](https://img.shields.io/badge/IEEE%20SoutheastCon-Path%20Planning%20for%20Robotic%20Delivery%20Systems-blue?logo=ieee)](https://ieeexplore.ieee.org/document/9764058)
 
 
-[![Charlotte Area Traffic Light Datasets](https://img.shields.io/badge/IEEE%20HONET-Charlotte%20Area%20Traffic%20Light%20Datasets%20-blue?logo=ieee)](https://ieeexplore.ieee.org/document/10374673)
+[![Charlotte Area Traffic Light Datasets](https://img.shields.io/badge/IEEE%20HONET-Charlotte%20Area%20Traffic%20Light%20Datasets%20-blue?logo=ieee)](https://ieeexplore.ieee.org/document/10374673)-->
 
 
 ## 🫵 Always open to collaborating on projects and innovative ideas. 
@@ -49,18 +49,19 @@ Feel free to connect with me here:
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=flat-square&logo=ubuntu&logoColor=ffffff)
 
 
-## 🚀 Find My CV & Resume 👇
+## 🚀 Find My CV 👇
 
 <p float="left"> 
-  <a href="https://github.com/samxu29/samxu29/blob/main/shengkaixu_2024cv.pdf" target="_blank"> 
-    <img src="https://github.com/samxu29/samxu29/blob/main/img/shengkaixu_2023cv.pdf_1.png" width="200" /> 
+  <a href="https://github.com/samxu29/samxu29/blob/main/shengkaixu_cv.pdf" target="_blank"> 
+    <img src="https://github.com/samxu29/samxu29/blob/main/img/shengkaixu_cv.pdf_1.png" width="200" /> 
   </a> 
-  <a href="https://github.com/samxu29/samxu29/blob/main/shengkaixu_2024cv.pdf" target="_blank"> 
-    <img src="https://github.com/samxu29/samxu29/blob/main/img/shengkaixu_2023cv.pdf_2.png" width="200" /> 
+  <a href="https://github.com/samxu29/samxu29/blob/main/shengkaixu_cv.pdf" target="_blank"> 
+    <img src="https://github.com/samxu29/samxu29/blob/main/img/shengkaixu_cv.pdf_2.png" width="200" /> 
   </a> 
-  <a href="https://github.com/samxu29/samxu29/blob/main/shengkaixu_2024cv.pdf" target="_blank"> 
-    <img src="https://github.com/samxu29/samxu29/blob/main/img/shengkaixu_2023cv.pdf_3.png" width="200" /> 
+  <a href="https://github.com/samxu29/samxu29/blob/main/shengkaixu_cv.pdf" target="_blank"> 
+    <img src="https://github.com/samxu29/samxu29/blob/main/img/shengkaixu_cv.pdf_3.png" width="200" /> 
   </a> 
-</p> 
-<a href="https://github.com/samxu29/samxu29/blob/main/shengkaixu_2023resume.pdf" target="_blank"> 
-  <img src="https://github.com/samxu29/samxu29/blob/main/img/shengkaixu_2023resume.pdf_1.png" width="300"> </a>
+  <a href="https://github.com/samxu29/samxu29/blob/main/shengkaixu_cv.pdf" target="_blank"> 
+    <img src="https://github.com/samxu29/samxu29/blob/main/img/shengkaixu_cv.pdf_4.png" width="200" /> 
+  </a> 
+</p>
